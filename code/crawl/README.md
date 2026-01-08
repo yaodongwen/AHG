@@ -1,0 +1,7 @@
+这个目录用来爬虫
+
+# save_concept_xlsx.py
+这个文件用来爬取同花顺上的所以概念，获取每个概念的成分股。然后将每个概念的成分股信息都保存在目录concept下，以概念名称命名
+
+# auto_scan_to_sqlite.py
+这个文件用来通过检索concept下的每个xlsx文件，爬取东方财富的新闻，并且把新闻存储在文件database/finance_news.db中。其中新闻将被整理到data目录下。finance_news.db中有concept表格存储当前爬取到概念，然后对每个概念都新建了一个新的表格。
