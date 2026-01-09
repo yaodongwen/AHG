@@ -2,3 +2,4 @@ data/
 database/
 concept/
 .notebook/
+**/__pycache__/**
