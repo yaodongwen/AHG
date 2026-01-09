@@ -1,0 +1,18 @@
+version: '3'
+services:
+  db:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+      
+  proxypool:
+    image: "germey/proxypool"
+    container_name: proxypool
+    ports:
+      - "5555:5555"
+    environment:
+      REDIS_HOST: db
+    depends_on:
+      - db
+      

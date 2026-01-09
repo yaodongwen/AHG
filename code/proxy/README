@@ -1,0 +1,5 @@
+运行：
+```bash
+docker-compose up -d
+```
+之后，你就可以浏览器访问 http://localhost:5555/random，你会发现它每次都会返回一个类似于 123.45.67.89:8080 的代理。
